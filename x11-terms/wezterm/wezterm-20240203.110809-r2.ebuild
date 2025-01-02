@@ -658,6 +658,9 @@ CRATES="
 	zvariant_utils@1.0.1
 "
 
+# stdsimd
+# RUST_MAX_VER="1.77.1"
+
 inherit bash-completion-r1 desktop cargo xdg-utils
 
 DESCRIPTION="A GPU-accelerated cross-platform terminal emulator and multiplexer"
@@ -720,7 +723,6 @@ BDEPEND="
 	dev-build/cmake
 	dev-vcs/git
 	virtual/pkgconfig
-	virtual/rust
 "
 
 QA_FLAGS_IGNORED="
