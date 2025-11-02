@@ -202,7 +202,7 @@ SRC_URI="
 "
 S="${WORKDIR}/${PN}"
 
-LICENSE="GPLv3"
+LICENSE="GPL-3"
 # Dependent crate licenses
 LICENSE+=" Apache-2.0 MIT Unicode-3.0 ZLIB"
 
