@@ -1,0 +1,13 @@
+--- wezterm-9999/.cargo/config.toml     2025-11-07 15:54:45.485523386 +0100
++++ wezterm-9999/.cargo/config.toml     2025-11-07 15:54:57.902272574 +0100
+@@ -7,3 +7,10 @@
+ # enabled for the target, so let's turn that on here.
+ [target.x86_64-pc-windows-msvc]
+ rustflags = ["-C", "target-feature=+crt-static"]
++
++[source."https://github.com/wez/libssh-rs.git"]
++git = "https://github.com/wez/libssh-rs.git"
++replace-with = "vendored-sources"
++
++[source.vendored-sources]
++directory = "deps/crates"
