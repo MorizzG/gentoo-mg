@@ -3,7 +3,7 @@
 
 EAPI=8
 
-PYTHON_COMPAT=( python3_{11..13} )
+PYTHON_COMPAT=(python3_{11..13})
 
 inherit cmake llvm.org multilib multilib-minimal
 inherit prefix python-single-r1 toolchain-funcs
@@ -100,40 +100,39 @@ check_distribution_components() {
 				l=${l%%-stripped*}
 
 				case ${l} in
-					# meta-targets
-					clang-libraries|distribution)
-						continue
-						;;
-					# tools
-					clang|clangd|clang-*)
-						;;
-					# static libraries
-					clang*|findAllSymbols)
-						continue
-						;;
-					# conditional to USE=doc
-					docs-clang-html|docs-clang-tools-html)
-						use doc || continue
-						;;
+				# meta-targets
+				clang-libraries | distribution)
+					continue
+					;;
+				# tools
+				clang | clangd | clang-*) ;;
+				# static libraries
+				clang* | findAllSymbols)
+					continue
+					;;
+				# conditional to USE=doc
+				docs-clang-html | docs-clang-tools-html)
+					use doc || continue
+					;;
 				esac
 
-				all_targets+=( "${l}" )
+				all_targets+=("${l}")
 			fi
 		done < <(${NINJA} -t targets all)
 
 		while read -r l; do
-			my_targets+=( "${l}" )
+			my_targets+=("${l}")
 		done < <(get_distribution_components $"\n")
 
 		local add=() remove=()
 		for l in "${all_targets[@]}"; do
 			if ! has "${l}" "${my_targets[@]}"; then
-				add+=( "${l}" )
+				add+=("${l}")
 			fi
 		done
 		for l in "${my_targets[@]}"; do
 			if ! has "${l}" "${all_targets[@]}"; then
-				remove+=( "${l}" )
+				remove+=("${l}")
 			fi
 		done
 
@@ -232,13 +231,13 @@ get_distribution_components() {
 		fi
 
 		if llvm_are_manpages_built; then
-			out+=( docs-clang-man )
-			use extra && out+=( docs-clang-tools-man )
+			out+=(docs-clang-man)
+			use extra && out+=(docs-clang-tools-man)
 		fi
 
 		if use doc; then
-			out+=( docs-clang-html )
-			use extra && out+=( docs-clang-tools-html )
+			out+=(docs-clang-html)
+			use extra && out+=(docs-clang-tools-html)
 		fi
 
 		use static-analyzer && out+=(
@@ -359,7 +358,7 @@ multilib_src_compile() {
 multilib_src_test() {
 	# respect TMPDIR!
 	local -x LIT_PRESERVES_TMP=1
-	local test_targets=( check-clang )
+	local test_targets=(check-clang)
 	if multilib_native_use extra; then
 		test_targets+=(
 			check-clang-tools
@@ -385,7 +384,7 @@ src_install() {
 	mv "${ED}"/usr/include "${ED}"/usr/lib/llvm/${LLVM_MAJOR}/include || die
 
 	# Apply CHOST and version suffix to clang tools
-	local clang_tools=( clang clang++ clang-cl clang-cpp )
+	local clang_tools=(clang clang++ clang-cl clang-cpp)
 	local abi i
 
 	# cmake gives us:
@@ -430,15 +429,16 @@ multilib_src_install() {
 	fi
 
 	if use static-libs; then
-        local libdir=$(get_libdir)
-        insinto "/usr/lib/llvm/${LLVM_MAJOR}/${libdir}"
+		local libdir=$(get_libdir)
 
-        for lib in "${BUILD_DIR}/${libdir}"/liblld*.a; do
-            if [[ -f ${lib} ]]; then
-                doins "${lib}"
-            fi
-        done
-    fi
+		insinto "/usr/lib/llvm/${LLVM_MAJOR}/${libdir}"
+
+		for lib in "${BUILD_DIR}/${libdir}"/libclang*.a; do
+			if [[ -f ${lib} ]]; then
+				doins "${lib}"
+			fi
+		done
+	fi
 }
 
 multilib_src_install_all() {
@@ -456,7 +456,7 @@ multilib_src_install_all() {
 }
 
 pkg_postinst() {
-	if [[ -z ${ROOT} && -f ${EPREFIX}/usr/share/eselect/modules/compiler-shadow.eselect ]] ; then
+	if [[ -z ${ROOT} && -f ${EPREFIX}/usr/share/eselect/modules/compiler-shadow.eselect ]]; then
 		eselect compiler-shadow update all
 	fi
 
@@ -470,7 +470,7 @@ pkg_postinst() {
 }
 
 pkg_postrm() {
-	if [[ -z ${ROOT} && -f ${EPREFIX}/usr/share/eselect/modules/compiler-shadow.eselect ]] ; then
+	if [[ -z ${ROOT} && -f ${EPREFIX}/usr/share/eselect/modules/compiler-shadow.eselect ]]; then
 		eselect compiler-shadow clean all
 	fi
 }
