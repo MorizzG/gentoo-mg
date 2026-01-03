@@ -80,8 +80,8 @@ inherit cargo
 DESCRIPTION="A command-line hex viewer"
 HOMEPAGE="https://github.com/sharkdp/hexyl"
 SRC_URI="
-	https://github.com/sharkdp/${PN}/archive/refs/tags/v${PV}.tar.gz
 	${CARGO_CRATE_URIS}
+	https://github.com/sharkdp/${PN}/archive/refs/tags/v${PV}.tar.gz -> ${P}.tar.gz
 "
 
 LICENSE="|| ( Apache-2.0 MIT )"

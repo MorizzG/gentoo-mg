@@ -3,7 +3,6 @@
 
 EAPI=8
 
-GO_OPTIONAL=1
 inherit go-module systemd toolchain-funcs
 
 DESCRIPTION="Early OOM Daemon for Linux"

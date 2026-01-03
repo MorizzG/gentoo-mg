@@ -2,6 +2,6 @@
 <!DOCTYPE pkgmetadata SYSTEM "https://www.gentoo.org/dtd/metadata.dtd">
 <pkgmetadata>
     <upstream>
-        <remote-id type="codeberg">dnkl/fuzzel</remote-id>
+        <remote-id type="github">sharkdp/hexyl</remote-id>
     </upstream>
 </pkgmetadata>
