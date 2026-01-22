@@ -4,4 +4,9 @@
     <upstream>
         <remote-id type="github">rfjakob/earlyoom</remote-id>
     </upstream>
+    <use>
+        <flag name="man">
+            Install man file
+        </flag>
+    </use>
 </pkgmetadata>
