@@ -467,5 +467,5 @@ src_install() {
 
   newbashcomp completions/bash ${PN}
   newzshcomp completions/zsh _${PN}
-  newfishcomp completions/fish ${PN}
+  newfishcomp completions/fish ${PN}.fish
 }
