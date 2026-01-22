@@ -439,7 +439,7 @@ CRATES="
 	zvariant_utils@3.3.0
 "
 
-inherit cargo
+inherit cargo shell-completion
 
 DESCRIPTION="Executes commands in response to file modifications"
 HOMEPAGE="https://watchexec.github.io"
@@ -459,9 +459,13 @@ SLOT="0"
 KEYWORDS="~amd64"
 
 src_compile() {
-	cargo_src_compile -p watchexec-cli
+  cargo_src_compile -p watchexec-cli
 }
 
 src_install() {
-	cargo_src_install --path crates/cli
+  cargo_src_install --path crates/cli
+
+  newbashcomp completions/bash ${PN}
+  newzshcomp completions/zsh _${PN}
+  newfishcomp completions/fish ${PN}
 }
