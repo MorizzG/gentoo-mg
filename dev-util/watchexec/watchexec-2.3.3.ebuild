@@ -465,6 +465,8 @@ src_compile() {
 src_install() {
   cargo_src_install --path crates/cli
 
+  doman doc/${PN}.1
+
   newbashcomp completions/bash ${PN}
   newzshcomp completions/zsh _${PN}
   newfishcomp completions/fish ${PN}.fish
