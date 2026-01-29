@@ -93,14 +93,14 @@ KEYWORDS="~amd64"
 BDEPEND="virtual/pandoc"
 
 src_compile() {
-  cargo_src_compile
+	cargo_src_compile
 
-  pandoc -s -t man doc/hexyl.1.md -o doc/hexyl.1 || die
+	pandoc -s -t man doc/hexyl.1.md -o doc/hexyl.1 || die
 }
 
 src_install() {
-  cargo_src_install
-  einstalldocs
+	cargo_src_install
+	einstalldocs
 
-  doman doc/hexyl.1
+	doman doc/hexyl.1
 }

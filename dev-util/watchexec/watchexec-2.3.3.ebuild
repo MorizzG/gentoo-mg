@@ -459,15 +459,15 @@ SLOT="0"
 KEYWORDS="~amd64"
 
 src_compile() {
-  cargo_src_compile -p watchexec-cli
+	cargo_src_compile -p watchexec-cli
 }
 
 src_install() {
-  cargo_src_install --path crates/cli
+	cargo_src_install --path crates/cli
 
-  doman doc/${PN}.1
+	doman doc/${PN}.1
 
-  newbashcomp completions/bash ${PN}
-  newzshcomp completions/zsh _${PN}
-  newfishcomp completions/fish ${PN}.fish
+	newbashcomp completions/bash ${PN}
+	newzshcomp completions/zsh _${PN}
+	newfishcomp completions/fish ${PN}.fish
 }
