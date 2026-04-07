@@ -82,7 +82,7 @@ CRATES="
 	digest@0.10.7
 	dirs-sys@0.5.0
 	dirs@6.0.0
-	dispatch2@0.3.0
+	dispatch2@0.3.1
 	dunce@1.0.5
 	dyn-clone@1.0.20
 	either@1.15.0
@@ -176,20 +176,20 @@ CRATES="
 	jaq-core@2.2.1
 	jaq-json@1.1.3
 	jaq-std@2.1.2
-	jiff-static@0.2.21
+	jiff-static@0.2.22
 	jiff-tzdb-platform@0.1.3
 	jiff-tzdb@0.1.5
-	jiff@0.2.21
-	js-sys@0.3.89
+	jiff@0.2.22
+	js-sys@0.3.91
 	kqueue-sys@1.0.4
 	kqueue@1.1.1
 	lazy_static@1.5.0
 	leb128fmt@0.1.0
-	libc@0.2.180
+	libc@0.2.182
 	libm@0.2.16
 	libmimalloc-sys@0.1.44
-	libredox@0.1.12
-	linux-raw-sys@0.11.0
+	libredox@0.1.14
+	linux-raw-sys@0.12.1
 	linux-raw-sys@0.9.4
 	listenfd@1.0.2
 	lock_api@0.4.14
@@ -210,7 +210,7 @@ CRATES="
 	nibble_vec@0.1.0
 	nix@0.29.0
 	nix@0.30.1
-	nix@0.31.1
+	nix@0.31.2
 	nom@7.1.3
 	normalize-line-endings@0.3.0
 	normalize-path@0.2.1
@@ -224,7 +224,7 @@ CRATES="
 	objc2-core-foundation@0.3.2
 	objc2-encode@4.1.0
 	objc2-foundation@0.3.2
-	objc2@0.6.3
+	objc2@0.6.4
 	object@0.37.3
 	once_cell@1.21.3
 	once_cell_polyfill@1.70.2
@@ -242,11 +242,11 @@ CRATES="
 	phf_generator@0.11.3
 	phf_shared@0.11.3
 	pid1@0.1.5
-	pin-project-internal@1.1.10
-	pin-project-lite@0.2.16
-	pin-project@1.1.10
+	pin-project-internal@1.1.11
+	pin-project-lite@0.2.17
+	pin-project@1.1.11
 	pin-utils@0.1.0
-	piper@0.2.4
+	piper@0.2.5
 	polling@3.11.0
 	portable-atomic-util@0.2.5
 	portable-atomic@1.13.1
@@ -257,7 +257,7 @@ CRATES="
 	printf-compat@0.3.1
 	proc-macro-crate@3.4.0
 	proc-macro2@1.0.106
-	process-wrap@9.0.3
+	process-wrap@9.1.0
 	prodash@30.0.1
 	prost-derive@0.14.3
 	prost-types@0.14.3
@@ -278,14 +278,14 @@ CRATES="
 	redox_users@0.5.2
 	regex-automata@0.4.14
 	regex-lite@0.1.9
-	regex-syntax@0.8.9
+	regex-syntax@0.8.10
 	roff@0.2.2
 	rustc-demangle@0.1.27
 	rustc_version@0.4.1
 	rustix-dlmalloc@0.2.2
 	rustix-futex-sync@0.4.0
 	rustix-openpty@0.2.0
-	rustix@1.1.3
+	rustix@1.1.4
 	rustversion@1.0.22
 	same-file@1.0.6
 	scopeguard@1.2.0
@@ -318,7 +318,7 @@ CRATES="
 	syn@2.0.117
 	sync_wrapper@1.0.2
 	tauri-winrt-notification@0.7.2
-	tempfile@3.25.0
+	tempfile@3.26.0
 	termcolor@1.4.1
 	terminal_size@0.4.3
 	terminfo@0.9.0
@@ -381,10 +381,10 @@ CRATES="
 	wasi@0.11.1+wasi-snapshot-preview1
 	wasip2@1.0.2+wasi-0.2.9
 	wasip3@0.4.0+wasi-0.3.0-rc-2026-01-06
-	wasm-bindgen-macro-support@0.2.112
-	wasm-bindgen-macro@0.2.112
-	wasm-bindgen-shared@0.2.112
-	wasm-bindgen@0.2.112
+	wasm-bindgen-macro-support@0.2.114
+	wasm-bindgen-macro@0.2.114
+	wasm-bindgen-shared@0.2.114
+	wasm-bindgen@0.2.114
 	wasm-encoder@0.244.0
 	wasm-metadata@0.244.0
 	wasmparser@0.244.0
@@ -447,8 +447,8 @@ CRATES="
 	zbus@5.14.0
 	zbus_macros@5.14.0
 	zbus_names@4.3.1
-	zerocopy-derive@0.8.39
-	zerocopy@0.8.39
+	zerocopy-derive@0.8.40
+	zerocopy@0.8.40
 	zmij@1.0.21
 	zvariant@5.10.0
 	zvariant_derive@5.10.0
