@@ -8,17 +8,16 @@ EAPI=8
 CRATES="
 	addr2line@0.25.1
 	adler2@2.0.1
-	aho-corasick@1.1.4
-	android_system_properties@0.1.5
-	anstream@0.6.21
-	anstyle-parse@0.2.7
+	aho-corasick@1.1.5
+	android_system_properties@0.1.6
+	anstream@1.0.0
+	anstyle-parse@1.0.0
 	anstyle-query@1.1.5
 	anstyle-wincon@3.0.11
-	anstyle@1.0.13
-	anyhow@1.0.102
+	anstyle@1.0.14
+	anyhow@1.0.104
 	argfile@0.2.1
-	arrayref@0.3.9
-	arrayvec@0.7.6
+	arrayvec@0.7.8
 	async-broadcast@0.7.2
 	async-channel@2.5.0
 	async-executor@1.14.0
@@ -27,57 +26,61 @@ CRATES="
 	async-priority-channel@0.2.0
 	async-process@2.5.0
 	async-recursion@1.1.1
-	async-signal@0.2.13
+	async-signal@0.2.14
 	async-task@4.7.1
-	async-trait@0.1.89
+	async-trait@0.1.92
 	atomic-take@1.1.0
 	atomic-waker@1.1.2
-	autocfg@1.5.0
+	autocfg@1.5.1
 	axum-core@0.5.6
-	axum@0.8.8
+	axum@0.8.9
 	backtrace-ext@0.2.1
 	backtrace@0.3.76
-	base64@0.21.7
 	base64@0.22.1
 	bitflags@1.3.2
-	bitflags@2.11.0
-	blake3@1.8.3
+	bitflags@2.13.1
+	blake3@1.8.7
 	block-buffer@0.10.4
 	block2@0.6.2
 	blocking@1.6.2
 	boxcar@0.2.14
-	bstr@1.12.1
-	bumpalo@3.20.2
+	bstr@1.13.1
+	bumpalo@3.20.3
 	byteorder@1.5.0
-	bytes@1.11.1
+	bytes@1.12.1
 	c-gull@0.22.3
 	c-scape@0.22.3
-	cc@1.2.56
+	cc@1.4.4
 	cfg-if@1.0.4
-	cfg_aliases@0.2.1
-	chrono@0.4.44
-	clap@4.5.60
-	clap_builder@4.5.60
-	clap_complete@4.5.66
-	clap_complete_nushell@4.5.10
-	clap_derive@4.5.55
-	clap_lex@1.0.0
-	clap_mangen@0.2.31
-	clearscreen@4.0.5
-	colorchoice@1.0.4
+	cfg_aliases@0.2.2
+	chacha20@0.10.1
+	chrono@0.4.45
+	clap@4.6.6
+	clap_builder@4.6.6
+	clap_complete@4.6.9
+	clap_complete_nushell@4.6.2
+	clap_derive@4.6.4
+	clap_lex@1.1.0
+	clap_mangen@0.2.33
+	clearscreen@4.0.6
+	colorchoice@1.0.5
 	concurrent-queue@2.5.0
 	console-api@0.9.0
 	console-subscriber@0.5.0
 	constant_time_eq@0.4.2
 	core-foundation-sys@0.8.7
 	cpufeatures@0.2.17
+	cpufeatures@0.3.0
 	crc32fast@1.5.0
-	crossbeam-channel@0.5.15
-	crossbeam-deque@0.8.6
-	crossbeam-epoch@0.9.18
-	crossbeam-utils@0.8.21
+	crossbeam-channel@0.5.16
+	crossbeam-deque@0.8.7
+	crossbeam-epoch@0.9.20
+	crossbeam-utils@0.8.22
 	crypto-common@0.1.7
-	dashmap@6.1.0
+	dashmap@6.2.1
+	defmt-macros@1.1.1
+	defmt-parser@1.0.0
+	defmt@1.1.1
 	deranged@0.5.8
 	digest@0.10.7
 	dirs-sys@0.5.0
@@ -85,153 +88,151 @@ CRATES="
 	dispatch2@0.3.1
 	dunce@1.0.5
 	dyn-clone@1.0.20
-	either@1.15.0
-	embed-resource@3.0.6
+	either@1.18.0
+	embed-resource@3.0.11
 	endi@1.1.1
 	endian-type@0.2.0
 	enumflags2@0.7.12
 	enumflags2_derive@0.7.12
-	env_filter@1.0.0
-	env_home@0.1.0
-	env_logger@0.11.9
+	env_filter@2.0.0
+	env_logger@0.11.11
 	equivalent@1.0.2
 	errno@0.3.14
 	event-listener-strategy@0.5.4
 	event-listener@4.0.3
-	event-listener@5.4.1
+	event-listener@5.4.2
 	eyra@0.22.0
 	faster-hex@0.10.0
-	fastrand@2.3.0
-	find-msvc-tools@0.1.9
+	fastrand@2.5.0
+	find-msvc-tools@0.1.11
 	flate2@1.1.9
 	fnv@1.0.7
 	foldhash@0.1.5
 	fs-err@2.11.0
 	fsevent-sys@4.1.0
-	futures-channel@0.3.32
-	futures-core@0.3.32
-	futures-executor@0.3.32
-	futures-io@0.3.32
+	futures-channel@0.3.34
+	futures-core@0.3.34
+	futures-executor@0.3.34
+	futures-io@0.3.34
 	futures-lite@2.6.1
-	futures-macro@0.3.32
-	futures-sink@0.3.32
-	futures-task@0.3.32
-	futures-util@0.3.32
-	futures@0.3.32
+	futures-macro@0.3.34
+	futures-sink@0.3.34
+	futures-task@0.3.34
+	futures-util@0.3.34
+	futures@0.3.34
 	generic-array@0.14.7
 	getrandom@0.2.17
 	getrandom@0.3.4
-	getrandom@0.4.1
+	getrandom@0.4.3
 	gimli@0.32.3
-	gix-actor@0.37.1
-	gix-config-value@0.16.0
-	gix-config@0.50.0
-	gix-date@0.12.1
-	gix-features@0.45.2
-	gix-fs@0.18.2
-	gix-glob@0.23.0
-	gix-hash@0.21.2
-	gix-hashtable@0.11.0
-	gix-lock@20.0.1
-	gix-object@0.54.1
-	gix-path@0.10.22
-	gix-ref@0.57.0
-	gix-sec@0.12.2
-	gix-tempfile@20.0.1
-	gix-trace@0.1.18
-	gix-utils@0.3.1
-	gix-validate@0.10.1
-	globset@0.4.18
-	h2@0.4.13
+	gimli@0.34.0
+	gix-actor@0.41.2
+	gix-config-value@0.19.1
+	gix-config@0.59.0
+	gix-date@0.15.6
+	gix-error@0.2.5
+	gix-features@0.49.0
+	gix-fs@0.22.0
+	gix-glob@0.27.0
+	gix-hash@0.26.0
+	gix-hashtable@0.16.0
+	gix-lock@24.0.0
+	gix-object@0.63.0
+	gix-path@0.12.4
+	gix-ref@0.66.0
+	gix-sec@0.14.2
+	gix-tempfile@24.0.0
+	gix-trace@0.1.21
+	gix-utils@0.3.5
+	gix-validate@0.11.3
+	globset@0.4.20
+	h2@0.4.18
 	hash32@0.3.1
 	hashbrown@0.14.5
-	hashbrown@0.15.5
-	hashbrown@0.16.1
-	hdrhistogram@7.5.4
+	hashbrown@0.17.1
+	hdrhistogram@7.6.0
 	heapless@0.8.0
 	heck@0.5.0
 	hermit-abi@0.5.2
 	hex@0.4.3
 	hifijson@0.2.3
-	http-body-util@0.1.3
-	http-body@1.0.1
-	http@1.4.0
+	http-body-util@0.1.5
+	http-body@1.1.0
+	http@1.5.0
 	httparse@1.10.1
 	httpdate@1.0.3
-	humantime@2.3.0
+	humantime@2.4.0
 	hyper-timeout@0.5.2
 	hyper-util@0.1.20
-	hyper@1.8.1
+	hyper@1.11.0
 	iana-time-zone-haiku@0.1.2
 	iana-time-zone@0.1.65
-	id-arena@2.3.0
-	ignore@0.4.25
-	indexmap@2.13.0
-	inotify-sys@0.1.5
-	inotify@0.11.0
+	ignore@0.4.33
+	indexmap@2.14.0
+	inotify-sys@0.1.8
+	inotify@0.11.5
 	is_ci@1.2.0
 	is_terminal_polyfill@1.70.2
 	itertools@0.14.0
-	itoa@1.0.17
+	itoa@1.0.18
 	jaq-core@2.2.1
 	jaq-json@1.1.3
 	jaq-std@2.1.2
-	jiff-static@0.2.22
+	jiff-core@0.1.0
+	jiff-static@0.2.35
 	jiff-tzdb-platform@0.1.3
-	jiff-tzdb@0.1.5
-	jiff@0.2.22
-	js-sys@0.3.91
-	kqueue-sys@1.0.4
-	kqueue@1.1.1
+	jiff-tzdb@0.1.8
+	jiff@0.2.35
+	js-sys@0.3.104
+	kqueue-sys@1.1.2
+	kqueue@1.2.1
 	lazy_static@1.5.0
-	leb128fmt@0.1.0
-	libc@0.2.182
+	libc@0.2.189
 	libm@0.2.16
-	libmimalloc-sys@0.1.44
-	libredox@0.1.14
+	libmimalloc-sys@0.1.49
+	libredox@0.1.20
 	linux-raw-sys@0.12.1
 	linux-raw-sys@0.9.4
 	listenfd@1.0.2
 	lock_api@0.4.14
-	log@0.4.29
-	mac-notification-sys@0.6.9
+	log@0.4.33
+	mac-notification-sys@0.6.15
 	matchers@0.2.0
 	matchit@0.8.4
-	memchr@2.8.0
-	memmap2@0.9.10
+	memchr@2.8.3
+	memmap2@0.9.11
 	memoffset@0.9.1
 	miette-derive@7.6.0
 	miette@7.6.0
-	mimalloc@0.1.48
+	mimalloc@0.1.52
 	mime@0.3.17
 	minimal-lexical@0.2.1
 	miniz_oxide@0.8.9
-	mio@1.1.1
+	mio@1.2.2
 	nibble_vec@0.1.0
-	nix@0.29.0
-	nix@0.30.1
-	nix@0.31.2
+	nix@0.31.3
 	nom@7.1.3
+	nom@8.0.0
 	normalize-line-endings@0.3.0
 	normalize-path@0.2.1
-	notify-rust@4.12.0
+	notify-rust@4.18.0
 	notify-types@2.1.0
 	notify@8.2.0
 	nu-ansi-term@0.50.3
 	num-complex@0.4.6
-	num-conv@0.2.0
+	num-conv@0.2.2
 	num-traits@0.2.19
 	objc2-core-foundation@0.3.2
 	objc2-encode@4.1.0
 	objc2-foundation@0.3.2
 	objc2@0.6.4
 	object@0.37.3
-	once_cell@1.21.3
+	once_cell@1.21.4
 	once_cell_polyfill@1.70.2
 	option-ext@0.2.0
 	ordered-stream@0.2.0
 	origin@0.26.2
-	os_str_bytes@7.1.1
+	os_str_bytes@7.2.1
 	owo-colors@4.3.0
 	parking@2.2.1
 	parking_lot@0.12.5
@@ -241,34 +242,34 @@ CRATES="
 	phf_codegen@0.11.3
 	phf_generator@0.11.3
 	phf_shared@0.11.3
-	pid1@0.1.5
-	pin-project-internal@1.1.11
+	pid1@0.1.6
+	pin-project-internal@1.1.13
 	pin-project-lite@0.2.17
-	pin-project@1.1.11
-	pin-utils@0.1.0
+	pin-project@1.1.13
 	piper@0.2.5
 	polling@3.11.0
-	portable-atomic-util@0.2.5
-	portable-atomic@1.13.1
+	portable-atomic-util@0.2.7
+	portable-atomic@1.15.0
 	posix-regex@0.1.4
 	powerfmt@0.2.0
 	ppv-lite86@0.2.21
-	prettyplease@0.2.37
 	printf-compat@0.3.1
-	proc-macro-crate@3.4.0
-	proc-macro2@1.0.106
+	proc-macro-crate@3.5.0
+	proc-macro2@1.0.107
 	process-wrap@9.1.0
-	prodash@30.0.1
-	prost-derive@0.14.3
-	prost-types@0.14.3
-	prost@0.14.3
-	quick-xml@0.37.5
-	quote@1.0.44
+	prodash@31.0.0
+	prost-derive@0.14.4
+	prost-types@0.14.4
+	prost@0.14.4
+	quote@1.0.47
 	r-efi@5.3.0
+	r-efi@6.0.0
 	radix_trie@0.3.0
-	rand@0.8.5
-	rand@0.9.2
+	rand@0.10.2
+	rand@0.8.7
+	rand@0.9.5
 	rand_chacha@0.9.0
+	rand_core@0.10.1
 	rand_core@0.6.4
 	rand_core@0.9.5
 	rand_pcg@0.9.0
@@ -276,102 +277,102 @@ CRATES="
 	realpath-ext@0.1.3
 	redox_syscall@0.5.18
 	redox_users@0.5.2
-	regex-automata@0.4.14
+	regex-automata@0.4.18
 	regex-lite@0.1.9
-	regex-syntax@0.8.10
-	roff@0.2.2
-	rustc-demangle@0.1.27
+	regex-syntax@0.8.11
+	regex@1.13.1
+	roff@1.1.1
+	rustc-demangle@0.1.28
 	rustc_version@0.4.1
 	rustix-dlmalloc@0.2.2
 	rustix-futex-sync@0.4.0
 	rustix-openpty@0.2.0
 	rustix@1.1.4
-	rustversion@1.0.22
+	rustversion@1.0.23
 	same-file@1.0.6
 	scopeguard@1.2.0
-	semver@1.0.27
-	serde@1.0.228
-	serde_core@1.0.228
-	serde_derive@1.0.228
-	serde_json@1.0.149
-	serde_repr@0.1.20
-	serde_spanned@1.0.4
+	semver@1.0.28
+	serde@1.0.229
+	serde_core@1.0.229
+	serde_derive@1.0.229
+	serde_json@1.0.151
+	serde_repr@0.1.21
+	serde_spanned@1.1.1
 	sha1-checked@0.10.0
-	sha1@0.10.6
+	sha1@0.10.7
 	sharded-slab@0.1.7
-	shlex@1.3.0
+	shlex@2.0.1
 	signal-hook-registry@1.4.8
-	signal-hook@0.3.18
-	simd-adler32@0.3.8
-	similar@2.7.0
-	siphasher@1.0.2
+	signal-hook@0.4.4
+	simd-adler32@0.3.10
+	similar@3.2.0
+	siphasher@1.0.3
 	slab@0.4.12
-	smallvec@1.15.1
-	snapbox-macros@0.4.0
-	snapbox@0.6.24
-	socket2@0.6.2
+	smallvec@1.15.2
+	snapbox-macros@1.1.0
+	snapbox@1.2.2
+	socket2@0.6.5
 	stable_deref_trait@1.2.1
 	strsim@0.11.1
 	supports-color@3.0.2
 	supports-hyperlinks@3.2.0
 	supports-unicode@3.0.0
-	syn@2.0.117
+	symlink@0.1.0
+	syn@2.0.119
+	syn@3.0.3
 	sync_wrapper@1.0.2
-	tauri-winrt-notification@0.7.2
-	tempfile@3.26.0
+	tauri-winrt-notification@0.7.3
+	tempfile@3.27.0
 	termcolor@1.4.1
-	terminal_size@0.4.3
+	terminal_size@0.4.4
 	terminfo@0.9.0
 	textwrap@0.16.2
-	thiserror-impl@1.0.69
-	thiserror-impl@2.0.18
-	thiserror@1.0.69
-	thiserror@2.0.18
-	thread_local@1.1.9
-	time-core@0.1.8
-	time-macros@0.2.27
-	time@0.3.47
-	tinyvec@1.10.0
+	thiserror-impl@2.0.20
+	thiserror@2.0.20
+	thread_local@1.1.10
+	time-core@0.1.9
+	time-macros@0.2.32
+	time@0.3.55
+	tinyvec@1.12.0
 	tinyvec_macros@0.1.1
-	tokio-macros@2.6.0
-	tokio-stream@0.1.18
-	tokio-util@0.7.18
-	tokio@1.49.0
-	toml@0.9.12+spec-1.1.0
-	toml_datetime@0.7.5+spec-1.1.0
-	toml_edit@0.23.10+spec-1.0.0
-	toml_parser@1.0.9+spec-1.1.0
-	toml_writer@1.0.6+spec-1.1.0
-	tonic-prost@0.14.5
-	tonic@0.14.5
+	tokio-macros@2.7.2
+	tokio-stream@0.1.19
+	tokio-util@0.7.19
+	tokio@1.53.1
+	toml@1.1.4+spec-1.1.0
+	toml_datetime@1.1.1+spec-1.1.0
+	toml_edit@0.25.13+spec-1.1.0
+	toml_parser@1.1.3+spec-1.1.0
+	toml_writer@1.1.2+spec-1.1.0
+	tonic-prost@0.14.6
+	tonic@0.14.6
 	tower-layer@0.3.3
 	tower-service@0.3.3
 	tower@0.5.3
-	tracing-appender@0.2.4
+	tracing-appender@0.2.5
 	tracing-attributes@0.1.31
 	tracing-core@0.1.36
 	tracing-log@0.2.0
 	tracing-serde@0.2.0
-	tracing-subscriber@0.3.22
+	tracing-subscriber@0.3.23
 	tracing-test-macro@0.2.6
 	tracing-test@0.2.6
 	tracing@0.1.44
 	try-lock@0.2.5
 	typed-arena@2.0.2
-	typenum@1.19.0
+	typenum@1.20.1
 	tz-rs@0.7.3
-	uds_windows@1.1.0
+	uds_windows@1.2.1
 	unicode-bom@2.0.3
 	unicode-ident@1.0.24
 	unicode-linebreak@0.1.5
 	unicode-normalization@0.1.25
 	unicode-width@0.1.14
 	unicode-width@0.2.2
-	unicode-xid@0.2.6
-	unwinding@0.2.8
+	unwinding@0.2.10
 	urlencoding@2.1.3
 	utf8parse@0.2.2
-	uuid@1.21.0
+	uuid@1.24.1
 	valuable@0.1.1
 	version_check@0.9.5
 	vswhom-sys@0.1.3
@@ -379,16 +380,12 @@ CRATES="
 	walkdir@2.5.0
 	want@0.3.1
 	wasi@0.11.1+wasi-snapshot-preview1
-	wasip2@1.0.2+wasi-0.2.9
-	wasip3@0.4.0+wasi-0.3.0-rc-2026-01-06
-	wasm-bindgen-macro-support@0.2.114
-	wasm-bindgen-macro@0.2.114
-	wasm-bindgen-shared@0.2.114
-	wasm-bindgen@0.2.114
-	wasm-encoder@0.244.0
-	wasm-metadata@0.244.0
-	wasmparser@0.244.0
-	which@8.0.0
+	wasip2@1.0.4+wasi-0.2.12
+	wasm-bindgen-macro-support@0.2.127
+	wasm-bindgen-macro@0.2.127
+	wasm-bindgen-shared@0.2.127
+	wasm-bindgen@0.2.127
+	which@8.0.5
 	winapi-i686-pc-windows-gnu@0.4.0
 	winapi-util@0.1.11
 	winapi-x86_64-pc-windows-gnu@0.4.0
@@ -435,24 +432,19 @@ CRATES="
 	windows_x86_64_gnullvm@0.53.1
 	windows_x86_64_msvc@0.52.6
 	windows_x86_64_msvc@0.53.1
-	winnow@0.7.14
+	winnow@1.0.4
 	winreg@0.55.0
-	winsafe@0.0.19
-	wit-bindgen-core@0.51.0
-	wit-bindgen-rust-macro@0.51.0
-	wit-bindgen-rust@0.51.0
-	wit-bindgen@0.51.0
-	wit-component@0.244.0
-	wit-parser@0.244.0
-	zbus@5.14.0
-	zbus_macros@5.14.0
-	zbus_names@4.3.1
-	zerocopy-derive@0.8.40
-	zerocopy@0.8.40
-	zmij@1.0.21
-	zvariant@5.10.0
-	zvariant_derive@5.10.0
-	zvariant_utils@3.3.0
+	wit-bindgen@0.57.1
+	zbus@5.19.0
+	zbus_macros@5.19.0
+	zbus_names@4.3.4
+	zcheapstr@1.1.0
+	zerocopy-derive@0.8.56
+	zerocopy@0.8.56
+	zmij@1.0.23
+	zvariant@5.15.0
+	zvariant_derive@5.15.0
+	zvariant_utils@4.2.0
 "
 
 inherit cargo shell-completion
@@ -468,8 +460,7 @@ SRC_URI="
 LICENSE="Apache-2.0"
 # Dependent crate licenses
 LICENSE+="
-	Apache-2.0 BSD-2 BSD CC0-1.0 ISC MIT MPL-2.0 Unicode-3.0 WTFPL-2
-	ZLIB
+	Apache-2.0 BSD CC0-1.0 ISC MIT MPL-2.0 Unicode-3.0 WTFPL-2 ZLIB
 "
 SLOT="0"
 KEYWORDS="~amd64"
