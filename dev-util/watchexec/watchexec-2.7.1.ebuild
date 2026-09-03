@@ -42,7 +42,7 @@ CRATES="
 	blake3@1.8.7
 	block-buffer@0.10.4
 	block2@0.6.2
-	blocking@1.6.2
+	blocking@1.7.0
 	boxcar@0.2.14
 	bstr@1.13.1
 	bumpalo@3.20.3
@@ -53,7 +53,7 @@ CRATES="
 	cc@1.4.4
 	cfg-if@1.0.4
 	cfg_aliases@0.2.2
-	chacha20@0.10.1
+	chacha20@0.10.2
 	chrono@0.4.45
 	clap@4.6.6
 	clap_builder@4.6.6
@@ -70,8 +70,8 @@ CRATES="
 	constant_time_eq@0.4.2
 	core-foundation-sys@0.8.7
 	cpufeatures@0.2.17
-	cpufeatures@0.3.0
-	crc32fast@1.5.0
+	cpufeatures@0.3.1
+	crc32fast@1.5.1
 	crossbeam-channel@0.5.16
 	crossbeam-deque@0.8.7
 	crossbeam-epoch@0.9.20
@@ -105,7 +105,7 @@ CRATES="
 	faster-hex@0.10.0
 	fastrand@2.5.0
 	find-msvc-tools@0.1.11
-	flate2@1.1.9
+	flate2@1.1.10
 	fnv@1.0.7
 	foldhash@0.1.5
 	fs-err@2.11.0
@@ -131,29 +131,29 @@ CRATES="
 	gix-config@0.59.0
 	gix-date@0.15.6
 	gix-error@0.2.5
-	gix-features@0.49.0
-	gix-fs@0.22.0
-	gix-glob@0.27.0
-	gix-hash@0.26.0
+	gix-features@0.49.1
+	gix-fs@0.22.1
+	gix-glob@0.27.1
+	gix-hash@0.26.2
 	gix-hashtable@0.16.0
 	gix-lock@24.0.0
 	gix-object@0.63.0
-	gix-path@0.12.4
+	gix-path@0.12.6
 	gix-ref@0.66.0
 	gix-sec@0.14.2
 	gix-tempfile@24.0.0
 	gix-trace@0.1.21
-	gix-utils@0.3.5
-	gix-validate@0.11.3
+	gix-utils@0.3.6
+	gix-validate@0.11.4
 	globset@0.4.20
-	h2@0.4.18
+	h2@0.4.19
 	hash32@0.3.1
 	hashbrown@0.14.5
 	hashbrown@0.17.1
 	hdrhistogram@7.6.0
 	heapless@0.8.0
 	heck@0.5.0
-	hermit-abi@0.5.2
+	hermit-abi@0.5.3
 	hex@0.4.3
 	hifijson@0.2.3
 	http-body-util@0.1.5
@@ -164,11 +164,11 @@ CRATES="
 	humantime@2.4.0
 	hyper-timeout@0.5.2
 	hyper-util@0.1.20
-	hyper@1.11.0
+	hyper@1.11.1
 	iana-time-zone-haiku@0.1.2
 	iana-time-zone@0.1.65
 	ignore@0.4.33
-	indexmap@2.14.0
+	indexmap@2.14.1
 	inotify-sys@0.1.8
 	inotify@0.11.5
 	is_ci@1.2.0
@@ -190,12 +190,12 @@ CRATES="
 	libc@0.2.189
 	libm@0.2.16
 	libmimalloc-sys@0.1.49
-	libredox@0.1.20
+	libredox@0.1.23
 	linux-raw-sys@0.12.1
 	linux-raw-sys@0.9.4
 	listenfd@1.0.2
 	lock_api@0.4.14
-	log@0.4.33
+	log@0.4.34
 	mac-notification-sys@0.6.15
 	matchers@0.2.0
 	matchit@0.8.4
@@ -208,7 +208,8 @@ CRATES="
 	mime@0.3.17
 	minimal-lexical@0.2.1
 	miniz_oxide@0.8.9
-	mio@1.2.2
+	miniz_oxide@0.9.1
+	mio@1.2.3
 	nibble_vec@0.1.0
 	nix@0.31.3
 	nom@7.1.3
@@ -233,7 +234,7 @@ CRATES="
 	ordered-stream@0.2.0
 	origin@0.26.2
 	os_str_bytes@7.2.1
-	owo-colors@4.3.0
+	owo-colors@4.4.0
 	parking@2.2.1
 	parking_lot@0.12.5
 	parking_lot_core@0.9.12
@@ -266,7 +267,7 @@ CRATES="
 	r-efi@6.0.0
 	radix_trie@0.3.0
 	rand@0.10.2
-	rand@0.8.7
+	rand@0.8.8
 	rand@0.9.5
 	rand_chacha@0.9.0
 	rand_core@0.10.1
@@ -308,7 +309,7 @@ CRATES="
 	similar@3.2.0
 	siphasher@1.0.3
 	slab@0.4.12
-	smallvec@1.15.2
+	smallvec@1.16.0
 	snapbox-macros@1.1.0
 	snapbox@1.2.2
 	socket2@0.6.5
@@ -319,7 +320,7 @@ CRATES="
 	supports-unicode@3.0.0
 	symlink@0.1.0
 	syn@2.0.119
-	syn@3.0.3
+	syn@3.0.4
 	sync_wrapper@1.0.2
 	tauri-winrt-notification@0.7.3
 	tempfile@3.27.0
@@ -339,7 +340,7 @@ CRATES="
 	tokio-stream@0.1.19
 	tokio-util@0.7.19
 	tokio@1.53.1
-	toml@1.1.4+spec-1.1.0
+	toml@1.1.5+spec-1.1.0
 	toml_datetime@1.1.1+spec-1.1.0
 	toml_edit@0.25.13+spec-1.1.0
 	toml_parser@1.1.3+spec-1.1.0
@@ -372,7 +373,7 @@ CRATES="
 	unwinding@0.2.10
 	urlencoding@2.1.3
 	utf8parse@0.2.2
-	uuid@1.24.1
+	uuid@1.26.0
 	valuable@0.1.1
 	version_check@0.9.5
 	vswhom-sys@0.1.3
@@ -385,7 +386,7 @@ CRATES="
 	wasm-bindgen-macro@0.2.127
 	wasm-bindgen-shared@0.2.127
 	wasm-bindgen@0.2.127
-	which@8.0.5
+	which@8.0.6
 	winapi-i686-pc-windows-gnu@0.4.0
 	winapi-util@0.1.11
 	winapi-x86_64-pc-windows-gnu@0.4.0
@@ -441,6 +442,7 @@ CRATES="
 	zcheapstr@1.1.0
 	zerocopy-derive@0.8.56
 	zerocopy@0.8.56
+	zlib-rs@0.6.7
 	zmij@1.0.23
 	zvariant@5.15.0
 	zvariant_derive@5.15.0
