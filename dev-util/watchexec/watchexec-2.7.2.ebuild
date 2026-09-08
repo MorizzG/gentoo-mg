@@ -50,7 +50,7 @@ CRATES="
 	bytes@1.12.1
 	c-gull@0.22.3
 	c-scape@0.22.3
-	cc@1.4.4
+	cc@1.4.5
 	cfg-if@1.0.4
 	cfg_aliases@0.2.2
 	chacha20@0.10.2
@@ -72,10 +72,10 @@ CRATES="
 	cpufeatures@0.2.17
 	cpufeatures@0.3.1
 	crc32fast@1.5.1
-	crossbeam-channel@0.5.16
-	crossbeam-deque@0.8.7
-	crossbeam-epoch@0.9.20
-	crossbeam-utils@0.8.22
+	crossbeam-channel@0.5.17
+	crossbeam-deque@0.8.8
+	crossbeam-epoch@0.9.21
+	crossbeam-utils@0.8.23
 	crypto-common@0.1.7
 	dashmap@6.2.1
 	defmt-macros@1.1.1
@@ -104,7 +104,7 @@ CRATES="
 	eyra@0.22.0
 	faster-hex@0.10.0
 	fastrand@2.5.0
-	find-msvc-tools@0.1.11
+	find-msvc-tools@0.1.12
 	flate2@1.1.10
 	fnv@1.0.7
 	foldhash@0.1.5
@@ -168,7 +168,7 @@ CRATES="
 	iana-time-zone-haiku@0.1.2
 	iana-time-zone@0.1.65
 	ignore@0.4.33
-	indexmap@2.14.1
+	indexmap@2.14.2
 	inotify-sys@0.1.8
 	inotify@0.11.5
 	is_ci@1.2.0
@@ -183,7 +183,7 @@ CRATES="
 	jiff-tzdb-platform@0.1.3
 	jiff-tzdb@0.1.8
 	jiff@0.2.35
-	js-sys@0.3.104
+	js-sys@0.3.105
 	kqueue-sys@1.1.2
 	kqueue@1.2.1
 	lazy_static@1.5.0
@@ -249,7 +249,7 @@ CRATES="
 	pin-project@1.1.13
 	piper@0.2.5
 	polling@3.11.0
-	portable-atomic-util@0.2.7
+	portable-atomic-util@0.2.8
 	portable-atomic@1.15.0
 	posix-regex@0.1.4
 	powerfmt@0.2.0
@@ -320,7 +320,7 @@ CRATES="
 	supports-unicode@3.0.0
 	symlink@0.1.0
 	syn@2.0.119
-	syn@3.0.4
+	syn@3.0.5
 	sync_wrapper@1.0.2
 	tauri-winrt-notification@0.7.3
 	tempfile@3.27.0
@@ -334,7 +334,7 @@ CRATES="
 	time-core@0.1.9
 	time-macros@0.2.32
 	time@0.3.55
-	tinyvec@1.12.0
+	tinyvec@1.13.2
 	tinyvec_macros@0.1.1
 	tokio-macros@2.7.2
 	tokio-stream@0.1.19
@@ -382,10 +382,10 @@ CRATES="
 	want@0.3.1
 	wasi@0.11.1+wasi-snapshot-preview1
 	wasip2@1.0.4+wasi-0.2.12
-	wasm-bindgen-macro-support@0.2.127
-	wasm-bindgen-macro@0.2.127
-	wasm-bindgen-shared@0.2.127
-	wasm-bindgen@0.2.127
+	wasm-bindgen-macro-support@0.2.128
+	wasm-bindgen-macro@0.2.128
+	wasm-bindgen-shared@0.2.128
+	wasm-bindgen@0.2.128
 	which@8.0.6
 	winapi-i686-pc-windows-gnu@0.4.0
 	winapi-util@0.1.11
